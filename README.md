@@ -27,5 +27,3 @@ claude plugin install usage-meter --marketplace peterson-engineering/general
 ```
 
 In the desktop app: click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `peterson-engineering/general`, then **Add plugin**.
-
-This repository is private: you need access to it on GitHub, and GitHub set up on your computer, to install.
