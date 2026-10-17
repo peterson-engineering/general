@@ -1,0 +1,1 @@
+{ "name": "usage-meter", "version": "0.1.0", "description": "Side pane showing Claude plan limits, session cost and context fill, with warnings at 80% and 95%", "types": "./types/index.d.ts" }

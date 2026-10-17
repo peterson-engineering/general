@@ -1,0 +1,5 @@
+{
+  "name": "general",
+  "owner": { "name": "Peterson Engineering" },
+  "plugins": [{ "name": "usage-meter", "source": "./" }]
+}
