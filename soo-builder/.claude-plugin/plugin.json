@@ -1,0 +1,1 @@
+{ "name": "soo-builder", "version": "0.1.0", "description": "Sequence of operations and DDC points list builder: reviews draft sequences, writes the sequence, builds the points list, checks it against the master library, and writes Word and Excel files for CAD Revit Link" }

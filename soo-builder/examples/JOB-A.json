@@ -1,0 +1,23 @@
+{
+  "format": "soo-builder-job",
+  "version": 1,
+  "code": "JOB-A",
+  "title": "Worked example from the build brief",
+  "government": true,
+  "humid": true,
+  "decisions": { "dehum": "full", "reheat": "hgrh", "hgrhValve": "onoff", "oaDamper": "mvd", "esds": "hardwired", "overrideTerm": "LOCAL OVERRIDE" },
+  "confirmed": { "dehum": true, "reheat": true, "hgrhValve": true, "oaDamper": true, "esds": true, "overrideTerm": true },
+  "values": { "CLG_LOCKOUT": 20, "HP_LOCKOUT": 20 },
+  "units": [
+    { "id": "u1", "type": "Single-zone CV split heat pump AHU (HGRH, electric aux heat)", "tag": "AHU-1", "cu": "CU-1", "compStages": 1, "heatStages": 1, "cfm": 800, "oaCfm": 150, "coolingMbh": 24, "rat": true, "rh": true, "override": true, "oaFlow": true, "highStatic": true, "supplySd": false, "returnSd": false, "condOverflow": false },
+    { "id": "u2", "type": "Single-zone CV split heat pump AHU (HGRH, electric aux heat)", "tag": "AHU-2", "cu": "CU-2", "compStages": 1, "heatStages": 1, "cfm": 1600, "oaCfm": 300, "coolingMbh": 48, "rat": true, "rh": true, "override": true, "oaFlow": true, "highStatic": true, "supplySd": true, "returnSd": false, "condOverflow": false },
+    { "id": "u3", "type": "Single-zone CV split heat pump AHU (HGRH, electric aux heat)", "tag": "AHU-3", "cu": "CU-3", "compStages": 2, "heatStages": 2, "cfm": 4000, "oaCfm": 800, "coolingMbh": 130, "rat": true, "rh": true, "override": true, "oaFlow": true, "highStatic": true, "supplySd": true, "returnSd": true, "condOverflow": false },
+    { "id": "u4", "type": "Mini-split indoor unit (MSAHU)", "tag": "MSAHU-1", "conditions": {} },
+    { "id": "u5", "type": "Mini-split condensing unit (MSCU)", "tag": "MSCU-1", "conditions": {} },
+    { "id": "u6", "type": "Exhaust fans", "tag": "EF-1,2", "conditions": { "Lights-interlocked fans": true } },
+    { "id": "u7", "type": "Plumbing", "tag": "WH-1", "conditions": { "BAS-enabled heater": true, "Recirc system": true } }
+  ],
+  "general": { "oat": true, "esdsDampers": ["OUTSIDE AIR INTAKE LOUVER", "EXHAUST LOUVER"], "waterMeter": true, "meterAlarm": false },
+  "openItems": [ { "text": "Low-ambient kit confirmation for 20°F cooling lockout.", "done": false }, { "text": "AHU schedule note lists supply smoke detector only; update for AHU-3 return detector.", "done": false } ],
+  "signoff": {}
+}

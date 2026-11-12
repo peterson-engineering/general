@@ -1,5 +1,16 @@
 {
   "name": "general",
-  "owner": { "name": "Peterson Engineering" },
-  "plugins": [{ "name": "usage-meter", "source": "./" }]
+  "owner": {
+    "name": "Peterson Engineering"
+  },
+  "plugins": [
+    {
+      "name": "usage-meter",
+      "source": "./"
+    },
+    {
+      "name": "soo-builder",
+      "source": "./soo-builder"
+    }
+  ]
 }
