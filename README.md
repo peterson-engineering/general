@@ -1,4 +1,11 @@
-# Claude Usage Meter
+# Peterson Engineering general tools
+
+Claude Code add-ons. Install any of them from this marketplace (`peterson-engineering/general`).
+
+- **Claude Usage Meter** (`usage-meter`): below.
+- **SOO Builder** (`soo-builder`): sequence of operations and DDC points list builder, with an editor page and a Claude skill. See [soo-builder/README.md](soo-builder/README.md).
+
+## Claude Usage Meter
 
 A Claude Code mod that adds a **Claude Usage** side pane:
 

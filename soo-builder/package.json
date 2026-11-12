@@ -1,0 +1,11 @@
+{
+  "name": "soo-builder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SOO and DDC points list builder",
+  "scripts": {
+    "test": "node --test tests/engine.test.cjs",
+    "data": "node cli/make-data.mjs",
+    "build": "node cli/build.mjs"
+  }
+}

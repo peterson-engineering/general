@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOO Builder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="bar">
+  <div class="brand"><span class="mark" aria-hidden="true"></span>SOO Builder</div>
+  <div class="job" id="jobLabel"></div>
+  <div class="bar-actions">
+    <button class="btn ghost" data-act="undo" title="Undo the last change (Ctrl+Z)">↺ Undo</button>
+    <button class="btn ghost" data-act="new-job" title="Start a new job">New</button>
+    <button class="btn ghost" data-act="open-job" title="Open a saved job file">Open</button>
+    <button class="btn" data-act="save-job" title="Save the job file (Ctrl+S)">Save job</button>
+    <button class="btn ghost" data-act="open-library" title="Open the office master points library (CSV)">Library</button>
+    <button class="btn ghost icon" data-act="text-smaller" title="Smaller text">A−</button>
+    <button class="btn ghost icon" data-act="text-larger" title="Larger text">A+</button>
+    <button class="btn ghost icon" data-act="theme" title="Light or dark">Dark</button>
+  </div>
+</header>
+<nav class="steps" id="steps"></nav>
+<div class="banner" id="banner" hidden></div>
+<main id="main"></main>
+<div class="toast" id="toast" hidden></div>
+<input type="file" id="fileJob" accept=".json" hidden>
+<input type="file" id="fileLib" accept=".csv" hidden>
+<input type="file" id="fileDraft" accept=".txt" hidden>
+<script src="library-data.js"></script>
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

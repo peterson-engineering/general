@@ -1,0 +1,94 @@
+equipment_type,point_description,point,units,trend,alarm,applies_when,source
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Zone temp,AI,°F,X,X,Always,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Zone cooling setpoint,AV,°F,X,,Always,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Zone heating setpoint,AV,°F,X,,Always,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Local tenant override,DI,OFF/ON,X,,Zone sensor with override button,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Return air temp,AI,°F,X,,Return TS shown,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Return air relative humidity,AI,%RH,X,X,Dehumidification control,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Return air humidity setpoint (dehumidification),AV,%RH,X,,Dehumidification control,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Mixed air temp,AI,°F,X,,Always,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Outside airflow,AI,CFM,X,X,OA flow station,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Outside airflow setpoint (design minimum),AV,CFM,X,,OA flow station,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Filter status,DI,OK/ALARM,X,X,Always,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",DX/HP coil leaving air temp (upstream of HGRH coil),AI,°F,X,X,Always (coil low limit),JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Supply fan start/stop,DO,ON/OFF,X,,Always,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Supply fan status / proof of flow,DI,ON/OFF,X,X,Always,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",High static pressure switch,DI,OK/ALARM,X,X,High static switch provided,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Electric heat stage N command,DO,ON/OFF,X,,One per stage,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Electric heat stage N status,DI,ON/OFF,X,,One per stage,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Electric heater high limit status,DI,OK/ALARM,X,X,Electric heat,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Discharge air temp (downstream of electric heater),AI,°F,X,X,Always,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Supply air smoke detector,DI,OK/ALARM,X,X,Supply SD required,JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Return air smoke detector,DI,OK/ALARM,X,X,"Return SD required (IMC over 2,000 CFM)",JOB-A
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Condensate pan high level,DI,OK/ALARM,X,X,Overflow switch provided (consider for units above ceilings),REF
+"Single-zone CV split heat pump AHU (HGRH, electric aux heat)",Motorized OA damper command / end switch,DO / DI,OPEN/CLOSE,X,X,Motorized OA damper provided (not used on JOB-A),Add as needed
+Split heat pump condensing unit (paired with item 1),Compressor stage N start/stop,DO,ON/OFF,X,,One per stage,JOB-A
+Split heat pump condensing unit (paired with item 1),Compressor stage N status,DI,ON/OFF,X,X,One per stage,JOB-A
+Split heat pump condensing unit (paired with item 1),Reversing valve command,DO,HEAT/COOL,X,,Heat pump,JOB-A
+Split heat pump condensing unit (paired with item 1),Hot gas reheat command,DO,ON/OFF,X,,HGRH (use AO % if valve modulates),JOB-A
+Split heat pump condensing unit (paired with item 1),Hot gas reheat status,DI,ON/OFF,X,,HGRH,JOB-A
+Split heat pump condensing unit (paired with item 1),Defrost mode status,DI,ON/OFF,X,,Heat pump,JOB-A
+Split heat pump condensing unit (paired with item 1),Compressor high/low refrigerant pressure fault,DI,OK/ALARM,X,X,Always,JOB-A
+Mini-split indoor unit (MSAHU),Unit enable,DO,ON/OFF,X,,Always,"JOB-A, REF"
+Mini-split indoor unit (MSAHU),Operating mode,DI,COOL/HEAT,X,,Always,"JOB-A, REF"
+Mini-split indoor unit (MSAHU),Return air temp,AI,°F,X,X,Always (high temp alarm for comm/server rooms),"JOB-A, REF"
+Mini-split indoor unit (MSAHU),Cooling setpoint,AV,°F,X,,Always,"JOB-A, REF"
+Mini-split indoor unit (MSAHU),Heating setpoint,AV,°F,X,,Always,"JOB-A, REF"
+Mini-split indoor unit (MSAHU),Fan status,DI,ON/OFF,X,,Always,"JOB-A, REF"
+Mini-split indoor unit (MSAHU),Unit common fault,DI,OK/FAULT,X,X,Always,"JOB-A, REF"
+Mini-split indoor unit (MSAHU),Condensate pump status,DI,ON/OFF,X,,Condensate pump provided,"JOB-A, REF"
+Mini-split indoor unit (MSAHU),Condensate high level alarm,DI,OK/ALARM,X,X,Condensate pump provided,"JOB-A, REF"
+Mini-split condensing unit (MSCU),Compressor status,DI,ON/OFF,X,,Always,"JOB-A, REF"
+Mini-split condensing unit (MSCU),Compressor fault,DI,OK/FAULT,X,X,Always,"JOB-A, REF"
+Mini-split condensing unit (MSCU),Compressor start/stop,DO,START/STOP,X,,Only if BAS commands the CU directly,REF
+Exhaust fans,Fan status,DI,ON/OFF,X,,Lights-interlocked fans,JOB-A
+Exhaust fans,Fan status,DI,ON/OFF,X,X,Continuous fans,JOB-A
+Exhaust fans,Fan start/stop,DO,ON/OFF,X,,BAS-scheduled fans,Add as needed
+Exhaust fans,"Smoke exhaust fan status (monitor only, fire alarm controlled)",DI,ON/OFF,X,X,Smoke exhaust fan,JOB-A
+Chilled water AHU (VAV system),Supply air static pressure setpoint,AV,IN. W.G.,X,,VAV AHU,REF
+Chilled water AHU (VAV system),Chilled water valve command,AO,%,X,,CHW coil,REF
+Chilled water AHU (VAV system),Chilled water valve position,AI,%,X,,CHW coil,REF
+Chilled water AHU (VAV system),Chilled water supply temp,AI,°F,X,,CHW coil,REF
+Chilled water AHU (VAV system),Chilled water return temp,AI,°F,X,,CHW coil,REF
+Chilled water AHU (VAV system),Cooling coil condensate pan high level,DI,OK/ALARM,X,X,Always,REF
+VAV terminal (electric reheat),Zone temp,AI,°F,X,X,Always,REF
+VAV terminal (electric reheat),Zone relative humidity,AI,%,X,X,Humidity sensor provided,REF
+VAV terminal (electric reheat),Zone cooling setpoint,AV,°F,X,,Always,REF
+VAV terminal (electric reheat),Zone heating setpoint,AV,°F,X,,Always,REF
+VAV terminal (electric reheat),Occupancy override,DI,OFF/ON,X,,Override button,REF
+VAV terminal (electric reheat),Airflow,AI,CFM,X,X,Always,REF
+VAV terminal (electric reheat),Airflow setpoint,AV,CFM,X,,Always,REF
+VAV terminal (electric reheat),Damper command,AO,%,X,,Always,REF
+VAV terminal (electric reheat),Damper position,AI,%,X,,Always,REF
+VAV terminal (electric reheat),Electric heat command,AO,%,X,,SCR electric heat,REF
+VAV terminal (electric reheat),Electric heat high limit,DI,OK/ALARM,X,X,Electric heat,REF
+VAV terminal (electric reheat),Electric heat airflow proving switch,DI,OK/ALARM,X,X,Electric heat,REF
+VAV terminal (electric reheat),Discharge air temp,AI,°F,X,,Always,REF
+Chilled water pumps and loop,VFD fault,DI,OK/FAULT,X,X,VFD pump,REF
+Chilled water pumps and loop,Pump speed command,AO,%,X,,VFD pump,REF
+Chilled water pumps and loop,Pump speed feedback,AI,%,X,,VFD pump,REF
+Chilled water pumps and loop,VFD HOA status,DI,AUTO/HAND,X,X,VFD pump,REF
+Chilled water pumps and loop,Building chilled water supply temp,AI,°F,X,X,CHW loop,REF
+Chilled water pumps and loop,Building chilled water return temp,AI,°F,X,,CHW loop,REF
+Chilled water pumps and loop,Chilled water differential pressure,AI,PSI,X,X,Variable flow loop,REF
+Chilled water pumps and loop,Chilled water differential pressure setpoint,AV,PSI,X,,Variable flow loop,REF
+Heating (unit heaters / electric heaters),"Space temp (vestibule, fire pump room, etc.)",AI,°F,X,X,Monitored space,REF
+Plumbing,Water heater start/stop,DO,ON/OFF,X,,BAS-enabled heater,JOB-A
+Plumbing,Water heater status,DI,ON/OFF,X,,Always,"JOB-A, REF"
+Plumbing,Water heater alarm / fault,DI,OK/ALARM,X,X,Always,"JOB-A, REF"
+Plumbing,Water heater supply / outlet temp,AI,°F,X,X,Always,"JOB-A, REF"
+Plumbing,Water heater return temp,AI,°F,X,,Recirc system,JOB-A
+Plumbing,Domestic HW circulating pump status,DI,ON/OFF,X,,Recirc pump,REF
+Plumbing,Domestic HW return temp,AI,°F,X,X,Recirc pump,REF
+Plumbing,Booster pump start/stop,DO,ON/OFF,X,,Booster system,REF
+Plumbing,Booster pump status,DI,ON/OFF,X,,Booster system,REF
+Plumbing,Booster pump fault,DI,OK/FAULT,X,X,Booster system,REF
+Plumbing,Booster pump discharge pressure,AI,PSI,X,X,Booster system,REF
+Plumbing,Sump pump high water alarm,DI,OK/ALARM,X,X,Sump pump,REF
+Plumbing,Sump pump oil detected alarm,DI,OK/ALARM,X,X,Elevator sump,REF
+General building systems,Outside air temp (global),AI,°F,X,,Always,JOB-A
+General building systems,Emergency HVAC shutdown switch status,DI,OK/ALARM,X,X,ESDS provided (DoD),JOB-A
+General building systems,Emergency shutdown low-leakage damper end switch (each louver),DI,OPEN/CLOSED,X,X,ESDS closes intake/exhaust louvers,JOB-A
+General building systems,Building potable water meter (totalized),AI,GALLONS,X,X,Meter tied to DDC,"JOB-A, REF"
+General building systems,Building potable water meter (flow),AI,GPM,X,X,Meter tied to DDC,"JOB-A, REF"
+General building systems,Building potable water meter alarm,DI,OK/ALARM,X,X,Meter with alarm contact,REF
